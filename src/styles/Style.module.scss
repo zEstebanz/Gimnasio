@@ -1,0 +1,200 @@
+/** Variables **/
+
+$amarillo: #fdf002;
+$dark: #202020;
+$gris: #808f85;
+$blanco: #fbfcff;
+$espejo: rgba(255, 255, 255, 0.581);
+$azul: #2176ff;
+
+$amarilloHover: #b3aa08;
+$footerColor: #000000;
+
+/* Section Styles */
+.section-cover {
+    .title-cover {
+
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../public/img/cover.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        user-select: none;
+
+        h1 {
+            padding-top: 180px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+        }
+
+        @media screen and (min-width: 768px) {
+            h1 {
+                font-size: 4.2rem;
+                /* Tamaño de fuente fijo para pantallas de al menos 768px de ancho */
+            }
+        }
+
+        span {
+            color: $amarillo;
+        }
+    }
+
+    .buttons {
+
+        display: flex;
+        justify-content: center;
+        /* centra los botones horizontalmente */
+        align-items: center;
+        /* centra los botones verticalmente */
+        margin-top: 20px;
+
+
+        .admin,
+        .client {
+            padding: 8px 10px;
+            /* espacio interno del botón */
+            font-size: 15px;
+            font-weight: 700;
+            /* tamaño de letra */
+            border: none;
+            /* borde del botón */
+            border-radius: 5px;
+            /* redondea las esquinas */
+            margin: 0 10px;
+            margin-top: 10px;
+            /* margen entre los botones */
+
+
+        }
+
+        .admin {
+            background-color: $espejo;
+            /* color de fondo del botón de administrador */
+            color: black;
+            /* color de letra */
+        }
+
+        .client {
+            background-color: $espejo;
+            /* color de fondo del botón de cliente */
+            color: black;
+            /* color de letra */
+        }
+
+        .admin:hover,
+        .client:hover {
+            background-color: $amarillo;
+            transition: 0.5s;
+        }
+
+        @media screen and (min-width: 768px) {
+
+            .admin,
+            .client {
+                padding: 10px 20px;
+                font-size: 20px;
+
+            }
+        }
+    }
+}
+
+.section-admin {
+
+    .title-admin {
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../public/img/cover.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        user-select: none;
+
+        h1 {
+            padding-top: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 40px;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+        }
+
+        h2 {
+            padding-top: 20px;
+            padding-bottom: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+        }
+
+        @media screen and (min-width: 768px) {
+            h1 {
+                font-size: 4.2rem;
+                /* Tamaño de fuente fijo para pantallas de al menos 768px de ancho */
+            }
+
+            h2 {
+                font-size: 3rem;
+            }
+        }
+
+        span {
+            color: $amarillo;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    label {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+        color: white;
+
+    }
+
+    input {
+        background-color: $espejo;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border-radius: 0.25rem;
+        border: 1px solid #ccc;
+        margin-bottom: 1rem;
+        width: 15rem;
+        box-sizing: border-box;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+        background-color: #fdf002;
+        border: none;
+        border-radius: 0.25rem;
+        color: #202020;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    button:hover {
+        background-color: #202020;
+        color: #fdf002;
+    }
+
+    @media screen and (min-width: 768px) {
+        input {
+            width: 30rem;
+        }
+    }
+
+}
